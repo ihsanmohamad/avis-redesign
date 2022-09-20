@@ -2,7 +2,6 @@
 	import {
 		SvelteUIProvider,
 		Header,
-		Container,
 	} from '@svelteuidev/core';
 	import HeaderContent from '$lib/components/HeaderContent.svelte';
 </script>

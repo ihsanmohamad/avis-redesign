@@ -1,5 +1,6 @@
 <script>
-	import HeroSection from "lib/components/HeroSection.svelte";
+	import CategorySection from "lib/components/CategorySection.svelte";
+import HeroSection from "lib/components/HeroSection.svelte";
 
 </script>
 <svelte:head>
@@ -15,3 +16,4 @@ justify-content: center;">
 </div> -->
 
 <HeroSection />
+<CategorySection />

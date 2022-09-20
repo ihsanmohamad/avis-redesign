@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { Container, Group, Button, Burger, createStyles } from '@svelteuidev/core';
 
+	let opened = false;
+
 	type items = {
 		link: string;
 		label: string;
@@ -16,7 +18,10 @@
 	const useStyles = createStyles((theme) => ({
 		root: {
 			marginTop: '$12',
-			marginBottom: '$12'
+			marginBottom: '$12',
+			'@xl': {
+				mx: '$24'
+			},
 		},
 		inner: {
 			display: 'flex',
@@ -70,5 +75,10 @@
             {/each}
 		</Group>
 		<Button class={classes.button}>Sign Up</Button>
+		<Burger
+			{opened}
+			on:click={() => (opened = !opened)}
+			override={{ d: 'block', '@md': { d: 'none' } }}
+		/>
 	</Container>
 </div>
