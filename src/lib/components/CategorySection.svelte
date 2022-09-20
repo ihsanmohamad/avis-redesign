@@ -3,13 +3,38 @@
 
 	const useStyles = createStyles(() => ({
 		root: {
+            position: 'relative',
 			pt: '$16',
 			// borderRadius: '$lg',
 			px: '$0',
 			'@lg': {
 				px: '$32'
 			},
-			background: '#F2F6FF'
+			background: '#F2F6FF',
+            '&::before': {
+                content: `''`,
+                '@lg': {
+                    position: 'absolute',
+                    content: `url("Dots.svg")`,
+                    width: '130px',
+                    height: '130px',
+                    display: 'block',
+                    top: '$48',
+                    left: '$48',
+                }
+            },
+            '&::after': {
+                content: `''`,
+                '@lg': {
+                    position: 'absolute',
+                    content: `url("Dots.svg")`,
+                    width: '130px',
+                    height: '130px',
+                    display: 'block',
+                    bottom: '$17',
+                    right: '$52'
+                }
+            }
 		},
 		inner: {
 			'@xl': {
@@ -95,7 +120,7 @@
 			display: 'flex',
 			flexDirection: 'column',
 			justifyContent: 'center'
-		}
+		},
 	}));
 
 	$: ({ classes } = useStyles());
