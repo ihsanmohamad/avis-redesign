@@ -10,7 +10,6 @@
 			'@lg': {
 				px: '$32'
 			},
-			background: '#F2F6FF',
             '&::before': {
                 content: `''`,
                 '@lg': {
