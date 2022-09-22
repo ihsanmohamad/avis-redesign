@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Container, Group, Paper, SimpleGrid, Button, createStyles } from '@svelteuidev/core';
+	import { Container, Group, createStyles } from '@svelteuidev/core';
 
 	const useStyles = createStyles(() => ({
 		root: {
