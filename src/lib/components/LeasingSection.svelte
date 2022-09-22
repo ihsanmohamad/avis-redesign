@@ -4,10 +4,11 @@
 	const useStyles = createStyles(() => ({
 		root: {
             position: 'relative',
-            mt: '$20',
+            mt: '$0',
 			// borderRadius: '$lg',
 			px: '$0',
 			'@lg': {
+                mt: '$20',
 				px: '$32'
 			},
 		},
@@ -42,7 +43,7 @@
 			color: '#6A6D9E'
 		},
 		image: {
-			height: '290px',
+			width: '100%',
 			'@md': {
 				display: 'block',
 				height: '290px'
@@ -50,7 +51,6 @@
 			'@lg': {
 				height: '590px'
 			},
-			contain: 'content'
 		},
 		button: {
 			background: '#4EA4F4',

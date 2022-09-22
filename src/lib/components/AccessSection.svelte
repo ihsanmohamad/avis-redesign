@@ -5,10 +5,13 @@
 		root: {
 			py: '$20',
 			// borderRadius: '$lg',
-            background: `url('Lines.svg')`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center 100%',
+            '@md': {
+                background: `url('Lines.svg')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain',
+                backgroundPosition: 'center 100%',
+            },
+           
 			px: '$0',
 			'@lg': {
 				px: '$32'
@@ -17,7 +20,7 @@
 		inner: {
 			zIndex: '$5',
 			display: 'flex',
-			flexDirection: 'column',
+			flexDirection: 'column-reverse',
 			justifyContent: 'center',
             alignItems: 'center',
             mt: '$10',
@@ -45,7 +48,7 @@
 			color: '#6A6D9E'
 		},
 		image: {
-            height: '290px',
+            width: '100%',
 			'@md': {
 				display: 'block',
 				height: '290px'
@@ -53,7 +56,6 @@
 			'@lg': {
 				height: '490px'
 			},
-			contain: 'content'
 		},
 		button: {
 			background: '#4EA4F4',
