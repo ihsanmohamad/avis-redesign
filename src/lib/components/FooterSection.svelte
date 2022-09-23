@@ -5,6 +5,7 @@
 		root: {
             position: 'relative',
             mt: '$20',
+            background: 'linear-gradient(180deg, #C2052A 0%, #570011 100%)',
 			// borderRadius: '$lg',
 			px: '$0',
 			'@lg': {
@@ -13,51 +14,29 @@
 			},
 		},
 		inner: {
-			position: 'relative',
-			'&::before': {
-                content: `''`,
-                position: 'absolute',
-				background: '$white',
-				top: '$0',
-				width: '100%',
-				height: '100%',
-				zIndex: -1,
-				'@lg': {
-					background: '$white',
-					top: 'auto',
-					width: 'calc(100vw - 1.2%)',
-					height: '65%',
-					zIndex: -1
-				},
-            },
-			zIndex: '$5',
 			display: 'flex',
-			flexDirection: 'column',
+			flexDirection: 'column-reverse',
 			justifyContent: 'center',
 			alignItems: 'center',
 			mt: '$10',
 			'@md': {
+				display: 'flex',
 				flexDirection: 'row',
 				mt: '$0'
 			},
 			'@xl': {
+				display: 'flex',
+				flexDirection: 'row',
 				mx: '$24'
 			}
 		},
-		heroTitle: {
-			color: '$black',
-			fontSize: '40px',
-			'@xl': {
-				fontSize: '50px'
-			}
-		},
-		heroCaption: {
+		text: {
 			fontFamily: '$standard',
 			fontStyle: 'normal',
 			fontWeight: 400,
 			fontSize: '20px',
 			lineHeight: '150%',
-			color: '#6A6D9E'
+			color: 'white'
 		},
 		image: {
 			width: '100%',
@@ -86,29 +65,19 @@
 
 <div class={classes.root}>
 	<Container fluid class={classes.inner}>
-		<img class={classes.image} src="Leasing.png" alt="leasing caption" />
 		<Group direction="column" align="baseline">
-			<h1 class={classes.heroTitle}>Leasing Services</h1>
-			<p class={classes.heroCaption}>
+			<p class={classes.text}>
 				Need a vehicle for the long term but do not wish to buy one? Avis Car leasing is for you!
 				You get to drive your car of choice with Avis taking care of all your vehicle maintenance
 				and servicing needs.
 			</p>
-			<Button class={classes.button}
-				>Learn More <svelte:fragment slot="rightIcon"
-					><svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg
-					></svelte:fragment
-				></Button
-			>
 		</Group>
+		<div>
+			<p class={classes.text}>
+				Need a vehicle for the long term but do not wish to buy one? Avis Car leasing is for you!
+				You get to drive your car of choice with Avis taking care of all your vehicle maintenance
+				and servicing needs.
+			</p>
+		</div>
 	</Container>
 </div>

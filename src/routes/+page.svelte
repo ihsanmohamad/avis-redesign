@@ -2,6 +2,7 @@
 	import AccessSection from 'lib/components/AccessSection.svelte';
 	import AppSection from 'lib/components/AppSection.svelte';
 	import CategorySection from 'lib/components/CategorySection.svelte';
+	import FooterSection from 'lib/components/FooterSection.svelte';
 	import HeroSection from 'lib/components/HeroSection.svelte';
 	import LeasingSection from 'lib/components/LeasingSection.svelte';
 	import ProcessSection from 'lib/components/ProcessSection.svelte';
@@ -25,4 +26,5 @@ justify-content: center;">
 	<AppSection />
 	<AccessSection />
 	<LeasingSection />
+	<FooterSection />
 </div>

@@ -3,14 +3,15 @@
 
 	const useStyles = createStyles(() => ({
 		root: {
-			mt: '$40',
+			mt:'$0',
 			// borderRadius: '$lg',
 			zIndex: '$2',
 			position: 'relative',
 			px: '$0',
 			background: 'linear-gradient(171.73deg, #D92C4E -1.67%, #82001A 98.89%);',
 			'@lg': {
-				px: '$32'
+				px: '$32',
+				mt: '$40',
 			}
 		},
 		inner: {

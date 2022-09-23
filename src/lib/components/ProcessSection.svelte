@@ -3,18 +3,20 @@
 
 	const useStyles = createStyles(() => ({
 		root: {
-            py: '$24',
+			py: '$10',
             position: 'relative',
 			// borderRadius: '$lg',
 			px: '$0',
 			'@lg': {
-				px: '$32'
+				px: '$32',
+				py: '$24',
 			},
             '@md': {
                 background: `url("map.svg")`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'auto',
-                backgroundPosition: 'center center'
+                backgroundPosition: 'center center',
+				py: '$24',
             }
 		},
 		inner: {
